@@ -1,0 +1,46 @@
+<header></header>
+<sub-header></sub-header>
+<side-menu></side-menu>
+<div class="container principal" ng-controller="principalController">
+    <div class="row">
+        <div class="panel-body" ng-show="noTableData">
+            <div class="col-md-12">
+                No results found
+            </div>
+        </div>
+        <div class="col-md-12 table-filter">
+            <div class="col-md-6">
+                <h4 style="margin-top: 0">Students</h4>
+                <span style="color: #768b97;"></span>showing <a>10</a> out of 100 contacts
+            </div>
+            <div class="col-md-6 text-right pdr-none"style="padding-top: 12px;">
+                <a type="button" class="btn default-button" ng-click="showFilter = !showFilter">Filter <i class="fa fa-filter" aria-hidden="true"></i></a>
+                <a class="btn btn-primary"style=" border-radius: 15px;font-size: 12px;"><i class="fa fa-plus" aria-hidden="true"></i>ADD CONTACT</a>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <table ng-table="usersTable" class="table text-center data-table" show-filter="showFilter" style="background-color: #fff;">
+                <tr ng-repeat="user in data">
+                    <td data-title="'Id'" sortable="'id'">
+                        <div class="circle" ng-style="{background: colorCodeArray[$index % colorCodeArray.length]}" >{{user.id}}</div>
+                    </td>
+                    <td data-title="'First Name'" sortable="'first_name'" filter="{ 'first_name': 'text' }">
+                        {{user.first_name}}
+                    </td>
+                    <td data-title="'Last Name'" sortable="'last_name'" filter="{ 'last_name': 'text' }">
+                        {{user.last_name}}
+                    </td>
+                    <td data-title="'e-mail'" sortable="'email'" filter="{ 'email': 'text' }">
+                        <span style="color: #009df7">{{user.email}}</span>
+                    </td>
+                    <td data-title="'Country'" sortable="'country'" filter="{ 'country': 'text' }">
+                        {{user.country}}
+                    </td>
+                    <td data-title="'IP'" sortable="'ip_address'">
+                        {{user.ip_address}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

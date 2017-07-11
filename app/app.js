@@ -1,4 +1,6 @@
 var collab = angular.module('collab',[
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ngTable',
+    'pageslide-directive'
 ]);

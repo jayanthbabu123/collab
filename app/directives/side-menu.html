@@ -1,0 +1,45 @@
+<div ng-controller="pageslideCtrl">
+    <button type="button" class="btn btn-primary pull-left slide-sidemenu-button" style=" margin-top: 57px" ng-click="toggle()">&#9776;</button>
+    <div pageslide ps-open="checked" ps-side="left" ps-width="318px"
+         style=" margin-top: 57px;background: white;border-right: 1px solid  #e2e9e6 ;border-bottom: 1px solid  #e2e9e6 ;">
+        <button type="button" class="btn btn-primary pull-right slide-sidemenu-button" ng-click="toggle()">
+            &#9776;</button>
+        <div class="profile-userpic">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/2000px-User_icon_2.svg.png"
+                 class="img-responsive" alt="">
+        </div>
+        <div class="profile-usertitle">
+            <div class="profile-usertitle-name">Marcus Doe</div>
+            <div class="profile-usertitle-job">Developer</div>
+        </div>
+        <div class="profile-userbuttons">
+            <button type="button" class="btn btn-success btn-sm">Follow</button>
+            <button type="button" class="btn btn-danger btn-sm">Message</button>
+        </div>
+        <div class="profile-usermenu">
+            <ul class="nav">
+                <li class="active">
+                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Overview </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i>Account Settings </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><i class="fa fa-check"></i>Tasks </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-flag"></i>Help </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i>Account Settings </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><i class="fa fa-check"></i>Tasks </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-flag"></i>Help </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

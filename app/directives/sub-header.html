@@ -1,0 +1,73 @@
+<div class="container-fluid sub-header  page-section">
+    <div class="row">
+        <div class="dashboardmenu clearfix">
+            <ul>
+                <li>
+                    <a  id="undergradDashboard" class="headerids ">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        Dashboard</a>
+                </li>
+                <li>
+                    <a ui-sref="profile" ui-sref-active="active">
+                        <i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+                </li>
+                <li>
+                    <a  id="undergradRecopagetab"
+                       class="headerids">
+                        <i class="fa fa-thumbs-up " aria-hidden="true"></i>
+                        Recommendations</a>
+                </li>
+                <li >
+                    <a  class="headerids">
+                        <i class="fa fa-bell" aria-hidden="true"></i><span
+                            class="notificationcount" style="background: red;" id="unread_cnt1"></span>
+                        Notifications</a>
+                </li>
+                <li class="pull-right"><a href="javascript:;" id="logout">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Logout</a></li>
+                <li class="pull-right"><a  id="Account"
+                                          class="headerids">
+                    <i class="fa fa-tasks" aria-hidden="true"></i>
+                    Manage Account</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    .dashboardmenu {
+        padding: 10px;
+        border-top: #f3f5f6 1px solid;
+    }
+    .dashboardmenu ul {
+        margin: 0;
+        padding: 0;
+    }
+    .dashboardmenu ul li {
+        font-size: 14px;
+        line-height: 24px;
+        float: left;
+        list-style: none;
+        font-weight: 300;
+    }
+    .dashboardmenu ul li a:hover, .dashboardmenu ul li a.active {
+        color: #009df7;
+        text-decoration: none;
+        filter: grayscale(0%);
+    }
+    .dashboardmenu ul li a {
+        color: #768b97;
+        text-decoration: none;
+        padding: 0 25px;
+        text-align: center;
+        filter: grayscale(100%);
+        display: block;
+    }
+    .dashboardmenu ul li a i {
+        display: block;
+        margin: 0 auto;
+    }
+    .sub-header {
+        background: #FFFFFF;
+    }
+</style>
